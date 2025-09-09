@@ -1,6 +1,6 @@
 # DRVAC - Davinci Resolve Video & Audio Converter For Linux
 
-**Created by Henrijs**  
+**Created by hnrijs**  
 GitHub: [https://github.com/hnrijs/DRVAC](https://github.com/hnrijs/DRVAC)
 
 ## Description
