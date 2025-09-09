@@ -11,7 +11,7 @@ After cloning the repository, navigate to the DRVAC folder using `cd DRVAC` and 
 
 ## Requirements
 - Python 3.x  
-- PyQt6 (`pip install -r requirements.txt`)  
+- PyQt6
 - FFmpeg
 
 ## Installation
@@ -19,5 +19,4 @@ After cloning the repository, navigate to the DRVAC folder using `cd DRVAC` and 
 ```bash
 git clone https://github.com/hnrijs/DRVAC.git
 cd DRVAC
-pip install -r requirements.txt
 python3 drvac.py
