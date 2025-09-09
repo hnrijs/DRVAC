@@ -55,7 +55,7 @@ class AboutWindow(QWidget):
         about_text.setReadOnly(True)
         about_text.setPlainText(
             "Davinci Resolve Video & Audio Converter For Linux (DRVAC)\n\n"
-            "Created by: Henrijs\n"
+            "Created by: hnrijs\n"
             "GitHub: https://github.com/hnrijs\n\n"
             "This program was made to simplify preparing video & audio\n"
             "files for DaVinci Resolve on Linux.\n"
