@@ -89,8 +89,8 @@ class DRVAC(QMainWindow):
         self.video_text.setReadOnly(True)
         self.video_text.setPlaceholderText("No videos selected")
 
-        self.add_video_btn = QPushButton("Add Video Input")   # <-- bez (s)
-        self.convert_video_btn = QPushButton("Convert Video") # <-- bez S
+        self.add_video_btn = QPushButton("Add Video Input")   # <-- no (s)
+        self.convert_video_btn = QPushButton("Convert Video") # <-- no S
 
         self.add_video_btn.clicked.connect(self.add_videos)
         self.convert_video_btn.clicked.connect(self.convert_videos)
@@ -107,8 +107,8 @@ class DRVAC(QMainWindow):
         self.audio_text.setReadOnly(True)
         self.audio_text.setPlaceholderText("No audios selected")
 
-        self.add_audio_btn = QPushButton("Add Audio Input")   # <-- bez (s)
-        self.convert_audio_btn = QPushButton("Convert Audio") # <-- bez S
+        self.add_audio_btn = QPushButton("Add Audio Input")   # <-- no (s)
+        self.convert_audio_btn = QPushButton("Convert Audio") # <-- no S
 
         self.add_audio_btn.clicked.connect(self.add_audios)
         self.convert_audio_btn.clicked.connect(self.convert_audios)
@@ -181,7 +181,7 @@ class DRVAC(QMainWindow):
 
     def convert_videos(self):
         if not self.video_paths:
-            QMessageBox.warning(self, "Warning", "No videos selected!")
+            QMessageBox.warning(self, "Warning", "No video selected!")  # <-- no S
             return
 
         for idx, video in enumerate(self.video_paths, start=1):
@@ -199,7 +199,7 @@ class DRVAC(QMainWindow):
 
     def convert_audios(self):
         if not self.audio_paths:
-            QMessageBox.warning(self, "Warning", "No audios selected!")
+            QMessageBox.warning(self, "Warning", "No audio selected!")  # <-- no S
             return
 
         for idx, audio in enumerate(self.audio_paths, start=1):
