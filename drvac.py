@@ -26,15 +26,15 @@ class HelpWindow(QWidget):
             "3. FFmpeg (install on Arch Linux: sudo pacman -S ffmpeg)\n\n"
             "Without these, the program will not run properly.\n\n"
             "=== How to use ===\n"
-            "1. Click 'Add Video Input(s)' to select one or more video files.\n"
+            "1. Click 'Add Video Input' to select one or more video files.\n"
             "   The program will convert them to MOV format with PCM 24-bit audio.\n"
             "   Files will be saved as 'output1.mov', 'output2.mov', etc.\n\n"
-            "2. Click 'Add Audio Input(s)' to select one or more audio files.\n"
+            "2. Click 'Add Audio Input' to select one or more audio files.\n"
             "   The program will convert them to 24-bit WAV format.\n"
             "   Files will be saved as 'audio_output24bit1.wav', 'audio_output24bit2.wav', etc.\n\n"
             "3. Use the 'Settings' menu at the top to choose the destination folder.\n"
             "   By default, converted files are saved in the current working directory.\n\n"
-            "4. Click 'Convert Videos' or 'Convert Audios' to start conversion.\n\n"
+            "4. Click 'Convert Video' or 'Convert Audio' to start conversion.\n\n"
             "=== Notes ===\n"
             "- This tool is designed for preparing files compatible with DaVinci Resolve.\n"
             "- Video tracks are copied without re-encoding (-c:v copy).\n"
@@ -89,8 +89,8 @@ class DRVAC(QMainWindow):
         self.video_text.setReadOnly(True)
         self.video_text.setPlaceholderText("No videos selected")
 
-        self.add_video_btn = QPushButton("Add Video Input(s)")
-        self.convert_video_btn = QPushButton("Convert Videos")
+        self.add_video_btn = QPushButton("Add Video Input")   # <-- bez (s)
+        self.convert_video_btn = QPushButton("Convert Video") # <-- bez S
 
         self.add_video_btn.clicked.connect(self.add_videos)
         self.convert_video_btn.clicked.connect(self.convert_videos)
@@ -107,8 +107,8 @@ class DRVAC(QMainWindow):
         self.audio_text.setReadOnly(True)
         self.audio_text.setPlaceholderText("No audios selected")
 
-        self.add_audio_btn = QPushButton("Add Audio Input(s)")
-        self.convert_audio_btn = QPushButton("Convert Audios")
+        self.add_audio_btn = QPushButton("Add Audio Input")   # <-- bez (s)
+        self.convert_audio_btn = QPushButton("Convert Audio") # <-- bez S
 
         self.add_audio_btn.clicked.connect(self.add_audios)
         self.convert_audio_btn.clicked.connect(self.convert_audios)
