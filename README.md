@@ -15,7 +15,7 @@ After cloning the repository, navigate to the DRVAC folder using `cd DRVAC` and 
 - FFmpeg
 
 ## Installation
-1. Clone the repository:
+Clone the repository:
 ```bash
 git clone https://github.com/hnrijs/DRVAC.git
 cd DRVAC
